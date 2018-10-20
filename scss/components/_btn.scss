@@ -1,0 +1,44 @@
+
+
+// Button sizes
+@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+@mixin button-variant($background, $font-color, $border:$background, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%)) {
+  color: $font-color;
+  background: $background;
+  border-color: $border;
+
+  &:hover, &:active, &:focus {
+    color: $font-color;
+    background: $hover-background;
+    border-color: $hover-border;
+    cursor: pointer;
+  }
+}
+
+.btn {
+  display: inline-block;
+  font-weight: $font-weight-semibold;
+  //color: $body-color;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+
+  @include button-size(px2Rem(16), px2Rem(16), px2Rem(24), 1.5, 0);
+}
+
+.btn__primaryLight {
+  @include button-variant($primaryLight, $primaryDark, $primaryLight);
+}
+
+.btn__block {
+  display: block;
+  width: 100%;
+}

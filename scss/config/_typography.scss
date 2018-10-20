@@ -1,0 +1,14 @@
+$base-font-size: 1rem;
+$base-line-height: 1.5;
+$font-times: Times, Regular;
+$font-Neue: Helvetica Neue, Regular;
+$font-weight-semibold: bold;
+$base-font-family: PingFang TC;
+
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  // -webkit-font-smoothing: antialiased
+  // -moz-osx-font-smoothing: grayscale
+  font-family: PingFang TC, Semibold, Microsoft JhengHei, Arial, serif;
+}

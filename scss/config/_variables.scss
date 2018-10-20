@@ -1,0 +1,58 @@
+//breakpoints
+$grid-breakpoints: (
+        xs: 0,
+        sm: 569px,
+        md: 768px,
+        lg: 1024px,
+  //xl: 1200px
+) !default;
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+                (
+                        0: 0,
+                        1: ($spacer * .25),
+                        2: ($spacer * .5),
+                        3: $spacer,
+                        4: ($spacer * 1.5),
+                        5: ($spacer*2),
+                        6: ($spacer * 3),
+                        7:($spacer * 4),
+                        8:($spacer * 5),
+                        9:($spacer * 6),
+                        10:($spacer * 6.5),
+                        11:($spacer * 7)
+                ),
+                $spacers
+);
+
+//$spacers:(
+//        0: 0,
+//        1: 5/16 rem,
+//        2: 10/16 rem,
+//        3: 15/16 rem,
+//        4: 20/16 rem,
+//        5: 25/16 rem,
+//        6: 30/16 rem,
+//        7:40/16rem,
+//        8:50/16rem,
+//        9:60/16rem,
+//        10:70/16rem,
+//        11:80/16rem,
+//        12:104/16rem,
+//        13:112/16rem
+//);
+
+//color
+$primary: #8DA291;
+$primaryDark: #3F5D45;
+$primaryLight: #EAF0ED;
+$accent: #FFE180;
+
+$white: #FFF;
+
+@function px2Rem($size) {
+  @return $size/16*1rem;
+}

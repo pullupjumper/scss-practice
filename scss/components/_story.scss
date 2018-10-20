@@ -1,0 +1,68 @@
+.story {
+
+  &__section {
+    background: $primaryLight;
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      height: px2Rem(420);
+    }
+  }
+
+  &__desktopSection {
+    height: px2Rem(503);
+    img {
+      width: px2Rem(89);
+      height: px2Rem(327);
+    }
+  }
+
+  &__mobileSection {
+    max-width: 100%;
+    padding: px2Rem(30) 0;
+    background: $white;
+    &:first-child{
+      @media (min-width: map_get($grid-breakpoints, md)) {
+        margin-top: px2Rem(-89);
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: px2Rem(250);
+    background-position: center center;
+    background-size: cover;
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      position: relative;
+      top: px2Rem(-20);
+      width: px2Rem(460);
+      height: px2Rem(460);
+    }
+  }
+
+  &__content {
+    width: 100%;
+    padding: px2Rem(30);
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+      height: px2Rem(420);
+      padding: px2Rem(60) 0;
+    }
+    p {
+      color: $primary;
+      line-height: 1.5;
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        margin-left: 2rem;
+        line-height: 2.5;
+        font-weight: lighter;
+        writing-mode: vertical-rl;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    top: px2Rem(-20);
+    width: px2Rem(88);
+    height: px2Rem(307);
+    background: url("../images/lg-為什麼選擇了做甜點.svg") no-repeat right;
+  }
+}

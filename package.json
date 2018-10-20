@@ -1,0 +1,16 @@
+{
+  "name": "scss-custom-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass ./scss/all.scss ./scss/all.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.3",
+    "susy": "^3.0.5"
+  }
+}

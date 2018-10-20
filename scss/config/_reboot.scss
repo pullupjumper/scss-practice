@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  transition: 0.5s all;
+  color: $primaryDark;
+}
+
+a {
+  text-decoration: none;
+  color: $primaryDark;
+}
+
+input:focus {
+  outline: none;
+}

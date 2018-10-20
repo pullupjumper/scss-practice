@@ -1,0 +1,44 @@
+.card {
+  &__img {
+    position: relative;
+    height: px2Rem(315);
+    background: url("https://bit.ly/2zL5jN7") center center;
+    background-size: cover;
+    &__tag {
+      position: absolute;
+      top: 0;
+      left: px2Rem(20);
+      padding: px2Rem(10);
+      writing-mode: vertical-lr;
+      background: $primaryDark;
+      color: $primaryLight;
+      font-size: 1rem;
+      font-weight: $font-weight-semibold;
+      letter-spacing: px2Rem(5.85);
+    }
+    &__icon{
+      position: absolute;
+      top: px2Rem(19);
+      right: px2Rem(22);
+      font-size: 1.5rem;
+    }
+  }
+  &__content {
+    height: px2Rem(56);
+    &__name {
+      flex: 1 1 auto;
+      height: px2Rem(56);
+      border-left: 1px solid $primaryLight;
+      border-right: 1px solid $primaryLight;
+      font-weight: lighter;
+      font-size: px2Rem(20);
+    }
+    &__price {
+      width: px2Rem(127);
+      height: px2Rem(56);
+      border-right: 1px solid $primaryLight;
+      font-weight: $font-weight-semibold;
+      font-size: px2Rem(20);
+    }
+  }
+}

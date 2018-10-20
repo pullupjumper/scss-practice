@@ -1,0 +1,36 @@
+.product {
+  padding: 0 0 px2Rem(30) 0;
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    padding: px2Rem(60)  0 px2Rem(60) 0;
+  }
+
+  &__category {
+    &__title {
+      height: px2Rem(65);
+      background: $primaryDark;
+      font-size: px2Rem(24);
+      font-weight: $font-weight-semibold;
+      color: $primaryLight;
+    }
+  }
+
+  &__categoryList {
+    &__item {
+      height: px2Rem(65);
+      border: 1px solid $primaryLight;
+      &_active, &:hover, &:active {
+        background: $primaryLight;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: px2Rem(65);
+        background: transparent;
+        font-size: px2Rem(24);
+        font-weight: $font-weight-semibold;
+        color: $primaryDark;
+      }
+    }
+  }
+}

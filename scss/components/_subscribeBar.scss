@@ -1,0 +1,46 @@
+.subscribeBar {
+  padding: px2Rem(30) px2Rem(30);
+  background: $primaryDark;
+  span {
+    margin-left: px2Rem(20);
+    align-self: center;
+    color: $primaryLight;
+    font-size: px2Rem(24);
+    font-family: $font-Neue;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    width: px2Rem(380);
+    height: px2Rem(56);
+    margin-top: px2Rem(30);
+    background: $primaryLight;
+    .fa-envelope {
+      margin-left: px2Rem(20);
+    }
+    i {
+      color: $primaryDark;
+    }
+  }
+  &__input {
+    flex: 1 1 auto;
+    width: 1rem;
+    margin-left: 0.5rem;
+    border: none;
+    background: transparent;
+    font-size: px2Rem(24);
+    color: $primary;
+  }
+  &__btn {
+    margin-right: 0;
+    margin-left: auto;
+    width: px2Rem(64);
+    height: px2Rem(56);
+    border: none;
+    background: $accent;
+    &:hover, &:active {
+      background: darken($accent, 10%);
+      cursor: pointer;
+    }
+  }
+}

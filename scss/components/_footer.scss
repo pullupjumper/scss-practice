@@ -1,0 +1,26 @@
+.footer {
+  padding: px2Rem(30) px2Rem(30);
+  background: $primaryLight;
+
+  &__logo {
+    padding-bottom: 2.5rem;
+  }
+
+  &__contactList li, &__contactList a {
+    font-family: $font-Neue;
+  }
+
+  &__iconList li {
+    margin-right: 0.5rem;
+  }
+
+  &__content img {
+    float: right;
+  }
+
+  &__copyrights {
+    font-family: $font-times;
+    vertical-align: bottom;
+    text-align: right;
+  }
+}

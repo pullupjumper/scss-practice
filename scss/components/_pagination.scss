@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  &__item {
+    flex: 0 0 auto;
+    width: px2Rem(60);
+    height: px2Rem(60);
+    border-left: 1px solid $primaryLight;
+    border-top: 1px solid $primaryLight;
+    border-bottom: 1px solid $primaryLight;
+    background: transparent;
+
+    &:last-child {
+      border-right: 1px solid $primaryLight;
+    }
+
+    &_active, &:hover, &:active {
+      border: 1px solid $primaryDark;
+      background: $primaryDark;
+      a.pagination__link {
+        color: $primaryLight;
+      }
+    }
+
+    .pagination__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: px2Rem(60);
+      height: px2Rem(60);
+      color: $primaryDark;
+      font-size: px2Rem(20);
+      font-weight: lighter;
+    }
+  }
+}
