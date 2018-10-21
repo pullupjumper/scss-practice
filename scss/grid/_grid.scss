@@ -32,11 +32,23 @@ $susy: (
   }
 }
 
-.row-child-mb-gutter {
-  > [class*="col-"] {
-    margin-bottom: gutter();
+@media (min-width: map_get($grid-breakpoints, xs)) {
+  .row-child-mb-no-gutter {
+    > [class*="col-"] {
+      margin-bottom: 0;
+    }
   }
 }
+
+@media (min-width: map_get($grid-breakpoints, lg)) {
+  .row-child-lg-mb-gutter {
+    > [class*="col-"] {
+      margin-bottom: gutter();
+    }
+  }
+}
+
+
 
 // ex:.col-md-6
 @each $name, $value in $grid-breakpoints {
