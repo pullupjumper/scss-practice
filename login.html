@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="./scss/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+          crossorigin="anonymous">
+</head>
+<body>
+<header class="header container d-flex align-items-center">
+    <a class="header__bars d-md-none" href="#"><i class="fas fa-bars"></i></a>
+    <h1 class="header__brand mx-auto ml-md-0"><a href="#"></a></h1>
+    <ul class="header__navList d-none align-items-center d-md-flex ml-md-auto">
+        <li><a href="./index.html">首頁</a></li>
+        <li><a href="./product.html">甜點</a></li>
+        <li><a href="./login.html">登錄</a></li>
+    </ul>
+    <a class="header__cart ml-md-0" href="#"><i class="fas fa-shopping-cart"></i></a>
+</header>
+
+
+<section class="login container px-md-11 py-md-9 d-flex align-items-md-center">
+    <div class="login__account">
+        <h1 class="login__account__title d-flex justify-content-center py-6 py-md-7">會員登入</h1>
+        <div class="login__account__social d-flex d-md-none">
+            <a class="btn btn__white d-flex flex-grow-1 justify-content-center" href="#">
+                <img src="./images/ic-facebook-logotype.svg" style="width: 74px; height: 15px" alt="">
+            </a>
+            <a class="btn btn__white d-flex flex-grow-1 justify-content-center" href="#">
+                <img src="./images/ic-google.svg" style="width: 74px; height: 15px" alt="">
+            </a>
+            <a class="btn btn__white d-flex flex-grow-1 justify-content-center" href="#">
+                <img src="./images/ic-yahoo.svg" style="width: 74px; height: 15px" alt="">
+            </a>
+        </div>
+        <form class="d-flex flex-column pt-6 pt-md-0" action="">
+            <div class="login__account__email d-flex align-items-center">
+                <i class="fas fa-user"></i>
+                <input type="email" placeholder="電子信箱/手機號碼">
+            </div>
+            <div class="login__account__pwd d-flex align-items-center">
+                <i class="fas fa-key"></i>
+                <input type="password" placeholder="請輸入使用者密碼">
+            </div>
+            <div class="login__account__check align-self-start">
+                <input type="checkbox" id="check">
+                <label for="check">記住我</label>
+            </div>
+            <a class="btn btn__accent btn__block" href="#">登入帳號</a>
+        </form>
+    </div>
+    <div class="login__social d-none d-md-flex flex-md-column ">
+        <h1 class="login__social__title align-self-center">—— 連結社群帳號 ——</h1>
+        <a class="btn btn__white d-flex justify-content-center" href="#">
+            <img src="./images/ic-facebook-logotype.svg" style="width: 85px; height: 20px" alt="">
+        </a>
+        <a class="btn btn__white d-flex justify-content-center" href="#">
+            <img src="./images/ic-google.svg" style="width: 85px; height: 20px" alt="">
+        </a>
+        <a class="btn btn__white d-flex justify-content-center" href="#">
+            <img src="./images/ic-yahoo.svg" style="width: 85px; height: 20px" alt="">
+        </a>
+    </div>
+</section>
+
+
+<section class="subscribeBar">
+    <div class="container px-md-11">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-center col-md-6 justify-content-md-start">
+                <img src="./images/logo-light.svg" style="width: 40px; height: 40px" alt="">
+                <span>訂閱你我的甜蜜郵件</span>
+            </div>
+            <div class="col-12 d-flex justify-content-center col-md-6 justify-content-md-end">
+                <form class="subscribeBar__form mt-md-0" action="">
+                    <i class="fas fa-envelope"></i>
+                    <input class="subscribeBar__input" type="email" title="">
+                    <button class="subscribeBar__btn" type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container px-md-11">
+        <div class="row d-flex">
+            <div class="col-md-6">
+                <div class="footer__logo pb-md-13">
+                    <img src="./images/logotype-lg-dark.svg" style="width: 171px; height: 26px;" alt="">
+                </div>
+                <ul class="footer__contactList">
+                    <li>07-1234-5678</li>
+                    <li>sweetaste@email.com</li>
+                    <li><a href="#">800 高雄市新興區幸福路 520 號</a></li>
+                </ul>
+            </div>
+            <div class="d-none col-md-6 d-md-block">
+                <div class="footer__content">
+                    <img src="./images/footer__title.svg" style="width: 59px; height: 218px;" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-7 mt-md-6">
+            <div class="col-12 col-md-6">
+                <ul class="footer__iconList d-flex">
+                    <li><a href="#"><i class="fas fa-at fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-12 d-flex justify-content-start align-items-end col-md-6 justify-content-md-end">
+                <p class="footer__copyrights mt-5 mt-md-0">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

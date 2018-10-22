@@ -3581,6 +3581,28 @@ body {
     border-color: #ccdbd4;
     cursor: pointer; }
 
+.btn__accent {
+  color: #3F5D45;
+  background: #FFE180;
+  border-color: #FFE180;
+  font-weight: bold;
+  line-height: 1.25; }
+  .btn__accent:hover, .btn__accent:active, .btn__accent:focus {
+    color: #3F5D45;
+    background: #ffd85a;
+    border-color: #ffd54d;
+    cursor: pointer; }
+
+.btn__white {
+  color: #8DA291;
+  background: #FFF;
+  border-color: #FFF; }
+  .btn__white:hover, .btn__white:active, .btn__white:focus {
+    color: #8DA291;
+    background: #ececec;
+    border-color: #e6e6e6;
+    cursor: pointer; }
+
 .btn__block {
   display: block;
   width: 100%; }
@@ -3673,3 +3695,56 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: #3F5D45; }
+
+.login__account {
+  flex: 0 0 100%;
+  background: #3F5D45; }
+  @media (min-width: 768px) {
+    .login__account {
+      flex: 0 0 50%; } }
+  .login__account__title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #EAF0ED; }
+  .login__account__social {
+    padding: 1.875rem;
+    background: #EAF0ED; }
+    .login__account__social .btn {
+      border-right: 1px solid #EAF0ED; }
+      .login__account__social .btn:last-child {
+        border-right: none; }
+  .login__account__email, .login__account__pwd {
+    height: 3.5rem;
+    margin: 0 1.875rem 1rem 1.875rem;
+    background: #EAF0ED; }
+    .login__account__email i, .login__account__pwd i {
+      margin-left: 1.25rem; }
+    .login__account__email input, .login__account__pwd input {
+      margin-left: 1.25rem;
+      font-size: 1rem;
+      color: #8DA291;
+      background: transparent;
+      border: none; }
+  .login__account__check {
+    margin-left: 1.875rem;
+    margin-bottom: 1.5625rem; }
+    .login__account__check label {
+      color: #EAF0ED;
+      font-size: 1rem; }
+
+.login__social {
+  background: #EAF0ED; }
+  @media (min-width: 768px) {
+    .login__social {
+      flex: 0 0 50%; } }
+  .login__social__title {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #8DA291;
+    padding-top: 2.5rem;
+    padding-bottom: 2.25rem; }
+  .login__social .btn {
+    height: 3.5rem;
+    margin: 0 1.875rem 1rem 1.875rem; }
+    .login__social .btn:last-child {
+      margin-bottom: 2.5625rem; }

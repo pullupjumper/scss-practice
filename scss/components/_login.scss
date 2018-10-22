@@ -1,0 +1,79 @@
+.login {
+  &__account {
+    flex: 0 0 100%;
+    background: $primaryDark;
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      flex: 0 0 50%;
+    }
+
+    &__title {
+      font-size: px2Rem(36);
+      font-weight: $font-weight-semibold;
+      color: $primaryLight;
+    }
+
+    &__social {
+      padding: px2Rem(30);
+      background: $primaryLight;
+
+      .btn {
+        border-right: 1px solid $primaryLight;
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    &__email, &__pwd {
+      height: px2Rem(56);
+      margin: 0 px2Rem(30) 1rem px2Rem(30);
+      background: $primaryLight;
+
+      i {
+        margin-left: px2Rem(20);
+      }
+
+      input {
+        margin-left: px2Rem(20);
+        font-size: 1rem;
+        color: $primary;
+        background: transparent;
+        border: none;
+      }
+    }
+
+    &__check {
+      margin-left: px2Rem(30);
+      margin-bottom: px2Rem(25);
+
+      label {
+        color: $primaryLight;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__social {
+    background: $primaryLight;
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      flex: 0 0 50%;
+    }
+
+    &__title {
+      font-size: px2Rem(24);
+      font-weight: lighter;
+      color: $primary;
+      padding-top: px2Rem(40);
+      padding-bottom: px2Rem(36);
+    }
+
+    .btn {
+      height: px2Rem(56);
+      margin: 0 px2Rem(30) 1rem px2Rem(30);
+
+      &:last-child {
+        margin-bottom: px2Rem(41);
+      }
+    }
+  }
+}
