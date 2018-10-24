@@ -4,35 +4,14 @@ $grid-breakpoints: (
         sm: 569px,
         md: 768px,
         lg: 1024px,
-  //xl: 1200px
 ) !default;
 
-// Spacing
-//$spacer: 1rem !default;
-//$spacers: () !default;
-//$spacers: map-merge(
-//                (
-//                        0: 0,
-//                        1: ($spacer * .25),
-//                        2: ($spacer * .5),
-//                        3: $spacer,
-//                        4: ($spacer * 1.5),
-//                        5: ($spacer*2),
-//                        6: ($spacer * 3),
-//                        7:($spacer * 4),
-//                        8:($spacer * 5),
-//                        9:($spacer * 6),
-//                        10:($spacer * 6.5),
-//                        11:($spacer * 7)
-//                ),
-//                $spacers
-//);
 
 $spacers:(
         0: 0,
         1: 5/16 *1rem,
         2: 10/16 *1rem,
-        3: 15/16 *1rem,
+        3: 16/16 *1rem,
         4: 20/16 *1rem,
         5: 25/16 *1rem,
         6: 30/16 *1rem,
@@ -50,9 +29,25 @@ $primary: #8DA291;
 $primaryDark: #3F5D45;
 $primaryLight: #EAF0ED;
 $accent: #FFE180;
-
 $white: #FFF;
 
+//mixin
 @function px2Rem($size) {
   @return $size/16*1rem;
+}
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
 }

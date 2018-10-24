@@ -14,14 +14,10 @@ $susy: (
   margin-right: auto;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  > [class*="col-"]:last-child {
-    margin-right: 0;
-  }
-
-}
+//.row {
+//  display: flex;
+//  flex-wrap: wrap;
+//}
 
 // ex:.row-2nth-child-mr-0
 @for $i from 1 through $columns {
@@ -48,31 +44,64 @@ $susy: (
   }
 }
 
+@mixin make-col($columns, $infix) {
+  @for $i from 1 through $columns {
 
+    .order#{$infix}-#{$i} {
+      order: $i;
+    }
 
-// ex:.col-md-6
-@each $name, $value in $grid-breakpoints {
-  $infix: "-#{$name}";
+    .row {
+      display: flex;
+      flex-wrap: wrap;
 
-  @if ($value == 0) {
-    $infix: "";
-  }
-
-  @media (min-width: $value) {
-    @for $i from 1 through $columns {
-
-      .order#{$infix}-#{$i} {
-        order: $i;
-      }
-
-      .col#{$infix}-#{$i} {
+      > .col#{$infix}-#{$i} {
         flex: 0 0 span($i);
         max-width: span($i);
 
         @if ($i != $columns) {
           margin-right: gutter();
         }
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
+
+    .row-no-gutter {
+      display: flex;
+      flex-wrap: wrap;
+
+      > .col#{$infix}-#{$i} {
+        @if ($i != $columns) {
+          flex: 0 0 span($i wide);
+          max-width: span($i wide);
+        } @else {
+          flex: 0 0 span($i);
+          max-width: span($i);
+        }
+
+        &:last-child {
+          flex: 0 0 span($i);
+          max-width: span($i);
+        }
+      }
+    }
+
+  }
+}
+
+// ex:.col-md-6
+@each $name, $value in $grid-breakpoints {
+
+  @include media-breakpoint-up($name, $grid-breakpoints) {
+    $infix: "-#{$name}";
+
+    @if ($value == 0) {
+      $infix: "";
+    }
+
+    @include make-col($columns, $infix);
   }
 }
