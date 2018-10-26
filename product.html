@@ -1,144 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./scss/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-          crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product</title>
+  <link rel="stylesheet" href="./scss/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
 </head>
 <body>
 <header class="header container d-flex align-items-center">
-    <a class="header__bars d-md-none" href="#"><i class="fas fa-bars"></i></a>
-    <h1 class="header__brand mx-auto ml-md-0"><a href="#"></a></h1>
-    <ul class="header__navList d-none align-items-center d-md-flex ml-md-auto">
-        <li><a href="#">首頁</a></li>
-        <li><a href="#">甜點</a></li>
-        <li><a href="#">登錄</a></li>
-    </ul>
-    <a class="header__cart ml-md-0" href="#"><i class="fas fa-shopping-cart"></i></a>
+  <a class="header__bars d-md-none" href="#"><i class="fas fa-bars"></i></a>
+  <h1 class="header__brand mx-auto ml-md-0"><a href="#"></a></h1>
+  <ul class="header__navList d-none align-items-center d-md-flex ml-md-auto">
+    <li><a href="./index.html">首頁</a></li>
+    <li><a href="./product.html">甜點</a></li>
+    <li><a href="./login.html">登錄</a></li>
+  </ul>
+  <a class="header__cart ml-md-0" href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
 </header>
 
-<section class="brand container"><div class="brand__img"></div></section>
+<section class="brand container">
+  <div class="brand__img"></div>
+</section>
 
-<section class="product container">
-    <div class="row">
-        <div class="col-12 col-lg-4">
-            <div class="product__category">
-                <h1 class="product__category__title d-flex justify-content-center align-items-center">甜點類別</h1>
-                <ul class="product__categoryList">
-                    <li class="product__categoryList__item product__categoryList__item_active"><a href="#">所有甜點（48）</a></li>
-                    <li class="product__categoryList__item"><a href="#">本日精選（10）</a></li>
-                    <li class="product__categoryList__item"><a href="#">人氣推薦（26）</a></li>
-                    <li class="product__categoryList__item"><a href="#">新品上市（12）</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-12 col-lg-8">
-            <ul class="row row-2nth-child-mr-0 row-child-mb-gutter flex-row flex-wrap">
-                <li class="col-12 col-lg-6">
-                    <div class="card">
-                        <div class="card__img">
-                            <div class="card__img__tag">本日精選</div>
-                            <a href="#" class="card__img__icon"><i class="far fa-heart"></i></a>
-                        </div>
-                        <div class="card__content d-flex">
-                            <div class="card__content__name d-flex justify-content-center align-items-center">焦糖馬卡龍</div>
-                            <div class="card__content__price d-flex justify-content-center align-items-center">NT$ 450</div>
-                        </div>
-                        <a href="#" class="btn btn__primaryLight btn__block">加入購物車</a>
-                    </div>
-                </li>
-                <li class="col-12 col-lg-6">
-                    <div class="card">
-                        <div class="card__img">
-                            <div class="card__img__tag">本日精選</div>
-                            <a href="#" class="card__img__icon"><i class="far fa-heart"></i></a>
-                        </div>
-                        <div class="card__content d-flex">
-                            <div class="card__content__name d-flex justify-content-center align-items-center">焦糖馬卡龍</div>
-                            <div class="card__content__price d-flex justify-content-center align-items-center">NT$ 450</div>
-                        </div>
-                        <a href="#" class="btn btn__primaryLight btn__block">加入購物車</a>
-                    </div>
-                </li>
-                <li class="col-12 col-lg-6">
-                    <div class="card">
-                        <div class="card__img">
-                            <div class="card__img__tag">本日精選</div>
-                            <a href="#" class="card__img__icon"><i class="far fa-heart"></i></a>
-                        </div>
-                        <div class="card__content d-flex">
-                            <div class="card__content__name d-flex justify-content-center align-items-center">焦糖馬卡龍</div>
-                            <div class="card__content__price d-flex justify-content-center align-items-center">NT$ 450</div>
-                        </div>
-                        <a href="#" class="btn btn__primaryLight btn__block">加入購物車</a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="pagination d-flex justify-content-center justify-content-lg-end">
-                <li class="pagination__item"><a class="pagination__link" href="#"><i class="fas fa-caret-left"></i></a></li>
-                <li class="pagination__item pagination__item_active"><a class="pagination__link" href="#">1</a></li>
-                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-                <li class="pagination__item"><a class="pagination__link" href="#"><i class="fas fa-caret-right"></i></a></li>
-            </ul>
-        </div>
+<section class="product container pb-6 py-lg-9">
+  <div class="row">
+    <div class="col-12 mb-6 col-lg-4 mb-lg-0">
+      <div class="product__category">
+        <h1 class="product__category__title d-flex justify-content-center align-items-center">甜點類別</h1>
+        <ul class="product__categoryList">
+          <li class="product__categoryList__item product__categoryList__item_active"><a href="#">所有甜點（48）</a></li>
+          <li class="product__categoryList__item"><a href="#">本日精選（10）</a></li>
+          <li class="product__categoryList__item"><a href="#">人氣推薦（26）</a></li>
+          <li class="product__categoryList__item"><a href="#">新品上市（12）</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="col-12 col-lg-8">
+      <ul class="row row-2nth-child-mr-0 row-child-mb-no-gutter flex-row flex-wrap row-child-lg-mb-gutter">
+        <li class="col-12 px-6 pb-6 col-lg-6 px-lg-0 pb-lg-0">
+          <div class="card">
+            <div class="card__img">
+              <div class="card__img__tag">本日精選</div>
+              <a href="#" class="card__img__icon"><i class="far fa-heart"></i></a>
+            </div>
+            <div class="card__content d-flex">
+              <div class="card__content__name d-flex justify-content-center align-items-center">焦糖馬卡龍</div>
+              <div class="card__content__price d-flex justify-content-center align-items-center">NT$ 450</div>
+            </div>
+            <a href="#" class="btn btn__primaryLight btn__block">加入購物車</a>
+          </div>
+        </li>
+        <li class="col-12 px-6 pb-6 col-lg-6 px-lg-0 pb-lg-0">
+          <div class="card">
+            <div class="card__img">
+              <div class="card__img__tag">本日精選</div>
+              <a href="#" class="card__img__icon"><i class="far fa-heart"></i></a>
+            </div>
+            <div class="card__content d-flex">
+              <div class="card__content__name d-flex justify-content-center align-items-center">焦糖馬卡龍</div>
+              <div class="card__content__price d-flex justify-content-center align-items-center">NT$ 450</div>
+            </div>
+            <a href="#" class="btn btn__primaryLight btn__block">加入購物車</a>
+          </div>
+        </li>
+        <li class="col-12 px-6 pb-6 col-lg-6 px-lg-0 pb-lg-0">
+          <div class="card">
+            <div class="card__img">
+              <div class="card__img__tag">本日精選</div>
+              <a href="#" class="card__img__icon"><i class="far fa-heart"></i></a>
+            </div>
+            <div class="card__content d-flex">
+              <div class="card__content__name d-flex justify-content-center align-items-center">焦糖馬卡龍</div>
+              <div class="card__content__price d-flex justify-content-center align-items-center">NT$ 450</div>
+            </div>
+            <a href="#" class="btn btn__primaryLight btn__block">加入購物車</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="pagination d-flex justify-content-center justify-content-lg-end">
+        <li class="pagination__item"><a class="pagination__link" href="#"><i class="fas fa-caret-left"></i></a></li>
+        <li class="pagination__item pagination__item_active"><a class="pagination__link" href="#">1</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#"><i class="fas fa-caret-right"></i></a></li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 
 <section class="subscribeBar">
-    <div class="container px-md-8">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center align-items-center col-md-6 justify-content-md-start">
-                <img src="./images/logo-light.svg" style="width: 40px; height: 40px" alt="">
-                <span>訂閱你我的甜蜜郵件</span>
-            </div>
-            <div class="col-12 d-flex justify-content-center col-md-6 justify-content-md-end">
-                <form class="subscribeBar__form mt-md-0" action="">
-                    <i class="fas fa-envelope"></i>
-                    <input class="subscribeBar__input" type="email" title="">
-                    <button class="subscribeBar__btn" type="submit"><i class="fas fa-arrow-right"></i></button>
-                </form>
-            </div>
-        </div>
+  <div class="container px-md-11">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center align-items-center col-md-6 justify-content-md-start">
+        <img src="./images/logo-light.svg" style="width: 40px; height: 40px" alt="">
+        <span>訂閱你我的甜蜜郵件</span>
+      </div>
+      <div class="col-12 d-flex justify-content-center col-md-6 justify-content-md-end">
+        <form class="subscribeBar__form mt-md-0" action="">
+          <i class="fas fa-envelope"></i>
+          <input class="subscribeBar__input" type="email" title="">
+          <button class="subscribeBar__btn" type="submit"><i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
     </div>
+  </div>
 </section>
 
 <footer class="footer">
-    <div class="container px-md-8">
-        <div class="row d-flex">
-            <div class="col-md-6">
-                <div class="footer__logo pb-md-11">
-                    <img src="./images/logotype-lg-dark.svg" style="width: 171px; height: 26px;" alt="">
-                </div>
-                <ul class="footer__contactList">
-                    <li>07-1234-5678</li>
-                    <li>sweetaste@email.com</li>
-                    <li><a href="#">800 高雄市新興區幸福路 520 號</a></li>
-                </ul>
-            </div>
-            <div class="d-none col-md-6 d-md-block">
-                <div class="footer__content">
-                    <img src="./images/footer__title.svg" style="width: 59px; height: 218px;" alt="">
-                </div>
-            </div>
+  <div class="container px-md-11">
+    <div class="row d-flex">
+      <div class="col-md-6">
+        <div class="footer__logo pb-md-13">
+          <img src="./images/logotype-lg-dark.svg" style="width: 171px; height: 26px;" alt="">
         </div>
-        <div class="row mt-5">
-            <div class="col-12 col-md-6">
-                <ul class="footer__iconList d-flex">
-                    <li><a href="#"><i class="fas fa-at fa-2x"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-12 d-flex justify-content-start align-items-end col-md-6 justify-content-md-end">
-                <p class="footer__copyrights mt-5 mt-md-0">© 2018 Sweetaste* All Rights Reserved</p>
-            </div>
+        <ul class="footer__contactList">
+          <li>07-1234-5678</li>
+          <li>sweetaste@email.com</li>
+          <li><a href="#">800 高雄市新興區幸福路 520 號</a></li>
+        </ul>
+      </div>
+      <div class="d-none col-md-6 d-md-block">
+        <div class="footer__content">
+          <img src="./images/footer__title.svg" style="width: 59px; height: 218px;" alt="">
         </div>
+      </div>
     </div>
-
+    <div class="row mt-7 mt-md-6">
+      <div class="col-12 col-md-6">
+        <ul class="footer__iconList d-flex">
+          <li><a href="#"><i class="fas fa-at fa-2x"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-12 d-flex justify-content-start align-items-end col-md-6 justify-content-md-end">
+        <p class="footer__copyrights mt-5 mt-md-0">© 2018 Sweetaste* All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
 </footer>
+
 </body>
 </html>

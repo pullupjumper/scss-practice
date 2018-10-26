@@ -38,6 +38,16 @@
   @include button-variant($primaryLight, $primaryDark, $primaryLight);
 }
 
+.btn__accent{
+  @include button-variant($accent, $primaryDark);
+  font-weight: $font-weight-semibold;
+  line-height: 1.25;
+}
+
+.btn__white{
+  @include button-variant($white, $primary);
+}
+
 .btn__block {
   display: block;
   width: 100%;

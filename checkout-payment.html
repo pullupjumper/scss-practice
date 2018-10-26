@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout-payment</title>
+  <link rel="stylesheet" href="./scss/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+</head>
+<body>
+<header class="header container d-flex align-items-center">
+  <a class="header__bars d-md-none" href="#"><i class="fas fa-bars"></i></a>
+  <h1 class="header__brand mx-auto ml-md-0"><a href="#"></a></h1>
+  <ul class="header__navList d-none align-items-center d-md-flex ml-md-auto">
+    <li><a href="./index.html">首頁</a></li>
+    <li><a href="./product.html">甜點</a></li>
+    <li><a href="./login.html">登錄</a></li>
+  </ul>
+  <a class="header__cart ml-md-0" href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+</header>
+
+<section class="checkout container row px-md-11 pt-0 pt-md-4 pb-0 pb-md-9">
+  <div class="checkout__form col-12 col-md-7">
+    <form class="px-7 py-6" action="">
+      <div class="step d-flex justify-content-between align-items-center pb-6">
+        <h1 class="step__title">付款</h1>
+        <ul class="step__stepList d-flex">
+          <li class="step__stepList__item step__stepList__item_completed">
+            <i class="fas fa-check-circle"></i>
+          </li>
+          <li class="step__stepList__item step__stepList__item_active">
+            <i class="fas fa-check-circle"></i>
+          </li>
+          <li class="step__stepList__item">
+            <i class="fas fa-check-circle"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="checkout__form__group d-flex flex-column mb-3">
+        <label for="cardNum">信用卡卡號</label>
+        <input type="text" id="cardNum" placeholder="9012-3456-7890-1234">
+      </div>
+      <div class="checkout__form__group d-flex flex-column mb-3">
+        <label for="lastName">持卡人姓名</label>
+        <div class="row">
+          <input class="col-6" type="text" id="lastName" placeholder="王">
+          <input class="col-6" type="text" id="firstName" placeholder="小明">
+        </div>
+      </div>
+      <div class="checkout__form__group d-flex flex-column mb-3">
+        <label>有效期限</label>
+        <div class="row mb-1">
+          <select class="col-6" name="" title="">
+            <option value="">月</option>
+          </select>
+          <select class="col-6" name="" title="">
+            <option  value="">年</option>
+          </select>
+        </div>
+      </div>
+      <div class="checkout__form__group row">
+        <div class="col-6 d-flex flex-column">
+          <label for="backSideNum">背面末三碼</label>
+          <input type="text" id="backSideNum" placeholder="123">
+        </div>
+      </div>
+    </form>
+    <a class="btn btn__accent btn__block" href="./checkout-invoice.html">下一步</a>
+  </div>
+
+  <div class="d-none d-md-block col-md-5">
+    <div class="orderDetail">
+      <h1 class="orderDetail__title d-flex justify-content-center align-items-center">訂單摘要</h1>
+      <ul class="orderDetail__detailList">
+        <li class="orderDetail__detailList__item d-flex justify-content-between">
+          <span>小計</span>
+          <span>NT$ 2,700</span>
+        </li>
+        <li class="orderDetail__detailList__item d-flex justify-content-between">
+          <span>運費</span>
+          <span>NT$ 2,700</span>
+        </li>
+        <li class="orderDetail__detailList__item d-flex justify-content-between">
+          <span>總計</span>
+          <span>NT$ 2,700</span>
+        </li>
+      </ul>
+    </div>
+    <div class="orderDetail">
+      <h1 class="orderDetail__title d-flex justify-content-center align-items-center">購物清單</h1>
+      <ul class="orderDetail__productList">
+        <li class="orderDetail__productList__item row d-flex align-items-center">
+          <div class="orderDetail__productList__img col-md-6"
+               style="background-image: url(https://bit.ly/2R5tqwD)"></div>
+          <div class="orderDetail__productList__content col-md-6">
+            <p>焦糖馬卡龍（2）</p>
+            <p>NT$ 900</p>
+          </div>
+        </li>
+        <li class="orderDetail__productList__item row d-flex align-items-center">
+          <div class="orderDetail__productList__img col-md-6"
+               style="background-image: url(https://bit.ly/2R5tqwD)"></div>
+          <div class="orderDetail__productList__content col-md-6">
+            <p>焦糖馬卡龍（2）</p>
+            <p>NT$ 900</p>
+          </div>
+        </li>
+        <li class="orderDetail__productList__item row d-flex align-items-center">
+          <div class="orderDetail__productList__img col-md-6"
+               style="background-image: url(https://bit.ly/2R5tqwD)"></div>
+          <div class="orderDetail__productList__content col-md-6">
+            <p>焦糖馬卡龍（2）</p>
+            <p>NT$ 900</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="subscribeBar">
+  <div class="container px-md-11">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center align-items-center col-md-6 justify-content-md-start">
+        <img src="./images/logo-light.svg" style="width: 40px; height: 40px" alt="">
+        <span>訂閱你我的甜蜜郵件</span>
+      </div>
+      <div class="col-12 d-flex justify-content-center col-md-6 justify-content-md-end">
+        <form class="subscribeBar__form mt-md-0" action="">
+          <i class="fas fa-envelope"></i>
+          <input class="subscribeBar__input" type="email" title="">
+          <button class="subscribeBar__btn" type="submit"><i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container px-md-11">
+    <div class="row d-flex">
+      <div class="col-md-6">
+        <div class="footer__logo pb-md-13">
+          <img src="./images/logotype-lg-dark.svg" style="width: 171px; height: 26px;" alt="">
+        </div>
+        <ul class="footer__contactList">
+          <li>07-1234-5678</li>
+          <li>sweetaste@email.com</li>
+          <li><a href="#">800 高雄市新興區幸福路 520 號</a></li>
+        </ul>
+      </div>
+      <div class="d-none col-md-6 d-md-block">
+        <div class="footer__content">
+          <img src="./images/footer__title.svg" style="width: 59px; height: 218px;" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="row mt-7 mt-md-6">
+      <div class="col-12 col-md-6">
+        <ul class="footer__iconList d-flex">
+          <li><a href="#"><i class="fas fa-at fa-2x"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-12 d-flex justify-content-start align-items-end col-md-6 justify-content-md-end">
+        <p class="footer__copyrights mt-5 mt-md-0">© 2018 Sweetaste* All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

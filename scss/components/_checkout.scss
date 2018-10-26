@@ -1,0 +1,172 @@
+.checkout {
+  &__form {
+    form {
+      background: $primaryDark;
+    }
+    &__group {
+      label {
+        margin-bottom: px2Rem(8);
+        font-size: px2Rem(20);
+        color: $primaryLight;
+      }
+      input, select {
+        height: px2Rem(56);
+        padding: px2Rem(17) px2Rem(20);
+        border: none;
+        font-size: 1rem;
+        font-weight: $font-weight-light;
+        color: $primary;
+        background: $primaryLight;
+        &:active, &:focus {
+          background: $white;
+        }
+      }
+    }
+  }
+}
+
+.orderDetail {
+  border: 1px solid $primaryLight;
+  margin-bottom: px2Rem(20);
+  &__title {
+    height: px2Rem(65);
+    font-size: px2Rem(24);
+    font-weight: $font-weight-semibold;
+    color: $primary;
+    background: $primaryLight;
+  }
+  &__detailList {
+    padding: px2Rem(16) px2Rem(20);
+    &__item {
+      span {
+        font-weight: $font-weight-light;
+        color: $primary;
+      }
+      &:first-child {
+        margin-bottom: px2Rem(8);
+      }
+      &:last-child {
+        margin-top: 1rem;
+        span {
+          font-size: px2Rem(20);
+          font-weight: $font-weight-semibold;
+        }
+      }
+    }
+  }
+  &__productList {
+    padding: px2Rem(16) px2Rem(20);
+    &__item {
+      margin-bottom: 1rem;
+      p {
+        color: $primary;
+        font-weight: $font-weight-light;
+        &:last-child {
+          font-size: px2Rem(20);
+          font-weight: $font-weight-semibold;
+        }
+      }
+      &:last-child {
+        margin-bottom: unset;
+      }
+    }
+    &__img {
+      height: px2Rem(80);
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+}
+
+.step {
+  &__title {
+    font-size: px2Rem(36);
+    font-weight: $font-weight-semibold;
+    color: $primaryLight;
+  }
+  &__stepList {
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: px2Rem(20);
+      height: px2Rem(20);
+      line-height: px2Rem(20);
+      border-radius: 100%;
+      border: 1px solid $primaryLight;
+      margin-right: px2Rem(65);
+      position: relative;
+      i {
+        display: none;
+        font-size: px2Rem(20);
+        color: $primaryLight;
+      }
+      &:after {
+        display: none;
+        content: '';
+        width: px2Rem(14);
+        height: px2Rem(14);
+        line-height: px2Rem(14);
+        border-radius: 100%;
+        background: $primaryLight;
+      }
+      &:last-child {
+        margin-right: unset;
+      }
+      &:first-child {
+        margin-left: unset;
+        &:before {
+          display: none;
+        }
+      }
+      &:before {
+        content: '';
+        width: px2Rem(65);
+        background-color: $primaryLight;
+        height: 1px;
+        position: absolute;
+        top: px2Rem(10);
+        left: px2Rem(-65);
+      }
+      &_active {
+        &:after {
+          display: block;
+        }
+      }
+      &_completed {
+        i {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $primaryLight;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+    height: px2Rem(56);
+    border-right: 1px solid $primaryLight;
+    a {
+      font-size: px2Rem(20);
+      font-weight: $font-weight-semibold;
+      color: $primaryLight;
+    }
+    &:last-child {
+      border-right: none;
+    }
+    &_active, &:active, &:focus {
+      background: $primaryLight;
+      a {
+        color: $primaryDark;
+      }
+    }
+  }
+}

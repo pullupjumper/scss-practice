@@ -1,9 +1,4 @@
 .product {
-  padding: 0 0 px2Rem(30) 0;
-  @media (min-width: map_get($grid-breakpoints, lg)) {
-    padding: px2Rem(60)  0 px2Rem(60) 0;
-  }
-
   &__category {
     &__title {
       height: px2Rem(65);
@@ -17,7 +12,9 @@
   &__categoryList {
     &__item {
       height: px2Rem(65);
-      border: 1px solid $primaryLight;
+      border-left: 1px solid $primaryLight;
+      border-right: 1px solid $primaryLight;
+      border-bottom: 1px solid $primaryLight;
       &_active, &:hover, &:active {
         background: $primaryLight;
       }

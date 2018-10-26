@@ -1,11 +1,11 @@
 @each $name, $value in $grid-breakpoints{
-  $infix:"-#{$name}";
-  
-  @if($value == 0){
-    $infix:"";
-  }
-  
-  @media (min-width: $value) {
+  @include media-breakpoint-up($name, $grid-breakpoints) {
+    $infix: "-#{$name}";
+
+    @if ($value == 0) {
+      $infix: "";
+    }
+
     .d#{$infix}-none         { display: none !important; }
     .d#{$infix}-inline       { display: inline !important; }
     .d#{$infix}-inline-block { display: inline-block !important; }
