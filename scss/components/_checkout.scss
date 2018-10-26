@@ -141,3 +141,32 @@
     }
   }
 }
+
+.btnGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $primaryLight;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+    height: px2Rem(56);
+    border-right: 1px solid $primaryLight;
+    a {
+      font-size: px2Rem(20);
+      font-weight: $font-weight-semibold;
+      color: $primaryLight;
+    }
+    &:last-child {
+      border-right: none;
+    }
+    &_active, &:active, &:focus {
+      background: $primaryLight;
+      a {
+        color: $primaryDark;
+      }
+    }
+  }
+}

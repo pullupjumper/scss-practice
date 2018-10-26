@@ -4657,3 +4657,26 @@ body {
     display: block; }
   .step__stepList__item_completed i {
     display: inline-block; }
+
+.btnGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EAF0ED; }
+  .btnGroup__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+    height: 3.5rem;
+    border-right: 1px solid #EAF0ED; }
+    .btnGroup__item a {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #EAF0ED; }
+    .btnGroup__item:last-child {
+      border-right: none; }
+    .btnGroup__item_active, .btnGroup__item:active, .btnGroup__item:focus {
+      background: #EAF0ED; }
+      .btnGroup__item_active a, .btnGroup__item:active a, .btnGroup__item:focus a {
+        color: #3F5D45; }
